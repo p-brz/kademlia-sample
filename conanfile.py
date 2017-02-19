@@ -20,9 +20,9 @@ class SampleConanFile(ConanFile):
     generators = "Waf", "env", "virtualenv"
 
     def imports(self):
-	# Copy waf executable to project folder
-	self.copy("waf", dst=".")
-	
+        # Copy waf executable to project folder
+        self.copy("waf", dst=".")
+        
         self.copy("*.dll", dst="bin", src="bin") # From bin to bin
         self.copy("*.dylib*", dst="bin", src="lib") # From lib to bin
 

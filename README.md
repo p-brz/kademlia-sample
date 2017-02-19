@@ -29,19 +29,19 @@ or
 
 ## Usage
 
-After building, a binary should be created at `build/src/node`. 
+After building, a binary should be created at `build/node`. 
 
 1) You can run it with the `--help` option to see the available options
 
-        ./build/src/node --help    
+        ./build/node --help    
 
 2) You need to run a first node that will bootstrap the dht:
 
-        ./build/src/node
+        ./build/node
 
 optionally specify a local port to bind:
 
-        ./build/src/node --port 12345
+        ./build/node --port 12345
 
 
 3) Then, you can run one or more nodes, bootstraping with one of the previous nodes:
@@ -49,9 +49,9 @@ optionally specify a local port to bind:
 **Note**: if you run then on same machine, remember to use different ports.
 **Note 2**: if you not set the port of bootstrap node it will use the default value
 
-        ./build/src/node "someip" -p 10001
-        ./build/src/node "otherip:10001" -p 10002
-        ./build/src/node "otherip:10002"
+        ./build/node "someip" -p 10001
+        ./build/node "otherip:10001" -p 10002
+        ./build/node "otherip:10002"
         ...
         
 4) For each one node (except the first one), you can use the `get` and `put` commands:
