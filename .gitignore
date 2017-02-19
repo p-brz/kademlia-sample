@@ -1,0 +1,18 @@
+#waf
+build/
+.lock-waf*
+.waf-*
+
+# conana
+conanbuildinfo*
+conaninfo.txt
+conan_imports_manifest.txt
+conanenv.txt
+*.pyc
+
+# Qt creator
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
